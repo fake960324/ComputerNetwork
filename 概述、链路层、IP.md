@@ -27,9 +27,9 @@
   * 以太网数据帧的`物理特性`是其*长度必须在46~1500字节* 之间。
   * 以太网的帧收不也有一个*16bit* 的`帧类型域`（ip,arp,rarp）
   * IP在首部存入一个长度为*8bit* 的数值，称作`协议域`（icmp，igmp，tcp，udp，esp，gre）
-  * TCP和UDP都使用一个*16bit*的`端口号`来表示不同的应用程序（ftp，telnet，http）
+  * TCP和UDP都使用一个*16bit*的`端口号`来表示不同的应用程序（ftp，telnet，http）<br>
 ![帧封装](https://github.com/fake960324/ComputerNetwork/blob/master/Pics/%E5%B8%A7%E5%B0%81%E8%A3%85.jpg)<br>
-* 分用
+* 分用<br>
 ![帧分用](https://github.com/fake960324/ComputerNetwork/blob/master/Pics/%E9%80%9A%E8%AE%AF%E5%B8%A7%E5%88%86%E7%94%A8.jpg)<br>
 * 端口号（用于识别应用程序）
   * 服务器一般都是通过`知名端口号`来识别的（tfp 21，telnet 23）。
@@ -48,7 +48,7 @@
   2. 802.4针对令牌总线网络
   3. 802.4针对令牌环网络
   4. 这三者的共同特性由802.2标准来定义，802网络*共有的逻辑链路控制*
-* 封装格式
+* 封装格式<br>
 ![以太网帧格式](https://github.com/fake960324/ComputerNetwork/blob/master/Pics/%E4%BB%A5%E5%A4%AA%E7%BD%91.jpg)<br>
 下方为以太网帧格式<br>
   * 两种种帧格式都采用*48bit* （6字节）的目的地址和源地址
@@ -59,7 +59,7 @@
 * 环回接口
   * 传给*环回地址（一般是127.0.0.1）* 的任何数据均作为IP输入（127开头的IP）
   * 传给`广播地址`或`多播地址`的数据报*复制一份传给环回接口*，然后送到以太网上。这是因为广播传送和多播传送的定义包含主机本身。
-  * 任何传给该主机IP地址的数据均送到环回接口。
+  * 任何传给该主机IP地址的数据均送到环回接口。<br>
 ![环回接口](https://github.com/fake960324/ComputerNetwork/blob/master/Pics/%E7%8E%AF%E5%9B%9E%E6%8E%A5%E5%8F%A3.jpg)<br>
 
   
